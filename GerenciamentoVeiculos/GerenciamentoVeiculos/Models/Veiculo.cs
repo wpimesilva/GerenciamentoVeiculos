@@ -5,7 +5,7 @@
         public Guid Id { get; set; } = Guid.NewGuid();
         public string Placa { get; set; }
         public string Modelo { get; set; }
-        public string Ano { get; set; }
+        public int Ano { get; set; }
         public Guid ProprietarioId { get; set; }
         public bool Ativo { get; set; } = true;
 
