@@ -15,5 +15,8 @@ namespace GerenciamentoVeiculos.Models
         [Required(ErrorMessage = "Data de nascimento é obrigatório")] 
         public DateTime DataNascimento { get; set; }
         public bool Ativo { get; set; } = true;
+
+        public List<Veiculo> Veiculos { get; set; } = new();
+
     }
 }

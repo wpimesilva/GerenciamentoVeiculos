@@ -17,7 +17,7 @@ public class AppDbContext : DbContext
     {
         modelBuilder.Entity<Proprietario>()
             .HasMany(p=> p.Veiculos)
-            .WithOne(v=> v.Proprietarios)
+            .WithOne(v=> v.Proprietario)
             .HasForeignKey(v => v.ProprietarioId)
             .OnDelete(DeleteBehavior.Restrict);
 
